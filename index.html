@@ -10,7 +10,7 @@
   <title>Как установить игру через App Store</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/MonaSansVF.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script defer src="script.js?v=3"></script>
 </head>
 <body>
@@ -26,14 +26,14 @@
     <section class="hero wrap" aria-labelledby="page-title">
       <div class="hero-copy">
         <h1 id="page-title">Установите игру через <em>App Store</em></h1>
-        <p class="hero-lead">Без выхода из iCloud. В инструкции — три этапа и 12 точных скриншотов для iPhone и iPad.</p>
+        <p class="hero-lead">Без выхода из iCloud. В инструкции — три этапа и два способа найти игру: в библиотеке аккаунта или в семейной библиотеке.</p>
         <a class="button" href="#steps">Начать установку <span aria-hidden="true">→</span></a>
         <p class="access-time">Доступ к аккаунту действует 24 часа.</p>
       </div>
       <div class="hero-visual" aria-label="Примеры экранов инструкции">
         <figure class="hero-shot hero-shot--back"><img src="assets/step-3.jpg" width="590" height="1280" alt="Раздел «Контент и покупки» в настройках iPhone"></figure>
         <figure class="hero-shot hero-shot--front"><img src="assets/step-10.jpg" width="590" height="1280" alt="Форма входа в аккаунт Apple"></figure>
-        <span class="hero-index" aria-hidden="true">01—12</span>
+        <span class="hero-index" aria-hidden="true">2 ПУТИ</span>
       </div>
     </section>
 
@@ -70,10 +70,28 @@
       </section>
 
       <section class="phase" id="download" aria-labelledby="download-title">
-        <header class="phase-heading wrap"><span class="phase-index" aria-hidden="true">03</span><div><h3 id="download-title">Найдите и установите игру</h3><p>После входа откройте список приложений, связанных с аккаунтом.</p></div></header>
+        <header class="phase-heading wrap"><span class="phase-index" aria-hidden="true">03</span><div><h3 id="download-title">Найдите и установите игру</h3><p>После входа игра может находиться в двух разных библиотеках. Если в одной её нет — проверьте вторую.</p></div></header>
         <div class="steps-list wrap">
-          <article class="step" id="step-11"><div class="step-content"><span class="step-number">11 / 12</span><h4>Откройте список приложений</h4><p>На странице аккаунта нажмите «Приложения и история покупок».</p></div><figure class="screenshot"><img src="assets/step-11.jpg" width="590" height="1280" alt="Пункт «Приложения и история покупок»" loading="lazy"></figure></article>
-          <article class="step" id="step-12"><div class="step-content"><span class="step-number">12 / 12</span><h4>Перейдите в историю покупок</h4><p>Нажмите «История покупок».</p></div><figure class="screenshot"><img src="assets/step-12.jpg" width="590" height="1280" alt="Пункт «История покупок»" loading="lazy"></figure></article>
+          <article class="step" id="step-11"><div class="step-content"><span class="step-number">11 / 12</span><h4>Откройте список приложений</h4><p>На странице аккаунта нажмите «Приложения и история покупок».</p></div><figure class="screenshot"><img src="assets/family-step-1.jpg" width="590" height="1280" alt="Пункт «Приложения и история покупок»" loading="lazy"></figure></article>
+
+          <div class="library-choice" aria-labelledby="library-choice-title">
+            <div class="library-choice__intro"><span class="step-number">12 / 12</span><h4 id="library-choice-title">Выберите, где лежит игра</h4><p>Название члена семьи может отличаться от примера. Начните с семейной библиотеки, а если игры там нет — откройте библиотеку аккаунта.</p></div>
+            <div class="library-choice__cards">
+              <a href="#family-library"><span>A</span><strong>Семейная библиотека</strong><small>Приложения организатора семьи</small></a>
+              <a href="#account-library"><span>B</span><strong>Библиотека аккаунта</strong><small>Покупки аккаунта, в который вы вошли</small></a>
+            </div>
+          </div>
+
+          <section class="library-route" id="family-library" aria-labelledby="family-library-title">
+            <header class="route-heading"><span>A</span><div><h4 id="family-library-title">Игра в семейной библиотеке</h4><p>Выберите библиотеку организатора семьи — строку «Приложения этого пользователя (имя)». Не выбирайте общую «Историю покупок» для этого варианта.</p></div></header>
+            <article class="step"><div class="step-content"><span class="step-number">A1</span><h4>Откройте библиотеку организатора</h4><p>Нажмите «Приложения этого пользователя». Имя в скобках — имя организатора (администратора) семьи. Не выбирайте общую кнопку «История покупок».</p></div><figure class="screenshot"><img src="assets/family-step-2.jpg" width="590" height="1280" alt="Выбор приложений организатора семьи" loading="lazy"></figure></article>
+            <article class="step"><div class="step-content"><span class="step-number">A2</span><h4>Найдите игру</h4><p>Откройте вкладку «Все» или «Не на этом iPhone», найдите нужную игру и нажмите значок загрузки.</p></div><figure class="screenshot"><img src="assets/family-step-3.jpg" width="590" height="1280" alt="Игра в семейной библиотеке App Store" loading="lazy"></figure></article>
+          </section>
+
+          <section class="library-route" id="account-library" aria-labelledby="account-library-title">
+            <header class="route-heading"><span>B</span><div><h4 id="account-library-title">Игра в библиотеке аккаунта</h4><p>Если игра куплена на самом аккаунте, в который вы вошли, откройте «Ваши приложения». В старой версии iOS этот список может открываться через «Историю покупок». Если выполнен вход в аккаунт организатора семьи, выбирайте именно историю покупок этого администратора.</p></div></header>
+            <article class="step" id="step-12"><div class="step-content"><span class="step-number">B1</span><h4>Откройте «Ваши приложения»</h4><p>Это покупки аккаунта, в который выполнен вход. Если на экране есть только «История покупок», откройте её и выберите покупки текущего аккаунта.</p></div><figure class="screenshot"><img src="assets/step-12.jpg" width="590" height="1280" alt="Выбор приложений аккаунта или истории покупок" loading="lazy"></figure></article>
+          </section>
           <aside class="finish-note"><h4>Найдите приложение и нажмите кнопку загрузки.</h4><p>После установки можно вернуться к своему Apple ID в разделе покупок. Не удаляйте игру: для повторной загрузки может потребоваться новый доступ.</p></aside>
         </div>
       </section>
